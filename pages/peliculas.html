@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/codoacodo.png" class="animate__animated animate__rotateIn" alt="Logo Codo a Codo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#tendencias">Tendencias de Hoy</a></li>
+                <li><a href="#aclamadas">Las mas Aclamadas</a></li>
+                <!-- <li><a href="#todas">Todas las Peliculas</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Películas y series ilimitadas y mucho más.</h1>
+            <p>Disfruta donde quieras. Cancela cuando quieras.</p>
+        </section>
+
+
+        <section id="tendencias"  class="peliculasTendencia">
+            <h3 class="tituloSection">Las tendencias de hoy</h3>
+            <div class="peliculas" id="tendenciasContainer">
+                <!-- Aquí se cargarán las películas tendencia -->
+            </div>
+        
+
+            <div class="botonera">
+            <button class="boton_anterior">Anterior</button>  
+            <button class="boton_siguiente">Siguiente</button>
+            </div>
+        </section>
+        <hr>
+        
+        <section id="aclamadas" class="peliculasTendencia">
+            <h3 class="tituloSection">Las más aclamadas</h3>
+
+            <div class="peliculas" id="aclamadasContainer">
+                <!-- Aquí se cargarán las películas más aclamadas -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h2>¿Preguntas? Llama al 0800 345 15..</h2>
+        <div class="fila">
+            <div class="columna">
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Relaciones con Inversionistas</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Prueba de velocidad</a>
+
+            </div>
+            <div class="columna">
+                <a href="#">Centro de ayuda</a>
+                <a href="#">Empleo</a>
+                <a href="#">Preferencias de cookies</a>
+                <a href="#">Avisos legales</a>
+            </div>
+            <div class="columna">
+                <a href="#">Cuenta</a>
+                <a href="#">Formas de ver</a>
+                <a href="#">Informacion corporativa</a>
+                <a href="#">Solo en Netflix</a>
+            </div>
+            <div class="columna">
+                <a href="#">Prensa</a>
+                <a href="#">Terminos de Uso</a>
+                <a href="#">Contactanos</a>
+            </div>
+        </div>
+        <p>© 2024 Practica Codo a Codo</p>
+
+    </footer>
+
+    <script src="../js/peliculas.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./assets/codoacodo.png" class="animate__animated animate__rotateIn" alt="Logo Codo a Codo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><button id="loginBtn">Iniciar Sesión</button></li>
+                <li><button id="registerBtn">Registrarse</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Modal de Iniciar Sesión -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content-login">
+            <span class="close" data-modal="loginModal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <!-- <label for="loginEmail">Correo Electrónico:</label> -->
+                <input type="email" placeholder="Correo Electronico" id="loginEmail" name="email">
+                <span class="error" id="loginEmailError"></span>
+
+                <input type="password" placeholder="Password" id="loginPassword" name="password">
+                <span class="error" id="loginPasswordError"></span>
+                <button type="submit">Ingresar</button>
+
+               <h5>Valores de prueba validos</h5> 
+               <h5>Correo Electronico =  usuario@email.com</h5> 
+               <h5>Password           =  1234</h5> 
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content-register">
+            <span class="close" data-modal="registerModal">&times;</span>
+            <h2>Registrarse</h2>
+            <form id="registerForm">
+
+                <!-- <label for="registerNombre">Nombre:</label> -->
+                <input type="text" placeholder="Nombre" id="registerNombre" name="nombre">
+                <span class="error" id="registerNombreError"></span>
+
+                <!-- <label for="registerApellido">Apellido:</label> -->
+                <input type="text" placeholder="Apellido" id="registerApellido" name="apellido">
+                <span class="error" id="registerApellidoError"></span>
+
+                <!-- <label for="registerEmail">Correo Electrónico:</label> -->
+                <input type="email" placeholder="Correo Electronico" id="registerEmail" name="email">
+                <span class="error" id="registerEmailError"></span>
+
+                <!-- <label for="registerPassword">Contraseña:</label> -->
+                <input type="password" placeholder="Password" id="registerPassword" name="password">
+                <span class="error" id="registerPasswordError"></span>
+
+                <!-- <label for="registerConfirmPassword">Confirmar Contraseña:</label> -->
+                <input type="password" placeholder="Reingrese Password" id="registerConfirmPassword"
+                    name="confirm_password">
+                <span class="error" id="registerConfirmPasswordError"></span>
+
+                <input type="date" id="fechaNacimiento"
+                    name="fechaNacimiento">
+                <span class="error" id="registerFechaError"></span>
+
+                <label for="pais">Selecciona tu país:</label>
+                <select id="pais" class="pais">
+                    <option value="">--Selecciona un país--</option>
+                    <option value="AR">Argentina</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CL">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="PA">Panama</option>
+                    <option value="PE">Perú</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                </select>
+                <span class="error" id="registerPaisError"></span>
+
+
+                <div class="terminos">
+                    <input class="check" type="checkbox" id="terminos">
+                    <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
+                    <span class="error" id="registerTerminosError"></span>
+                </div>
+
+                <button type="submit">Registrar</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <main>
+
+        <section class="hero">
+            <h1>Películas y series ilimitadas y mucho más.</h1>
+            <p>Disfruta donde quieras. Cancela cuando quieras.</p>
+        </section>
+
+
+        <section id="peliculas">
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h2>¿Preguntas? Llama al 0800 345 15..</h2>
+        <div class="fila">
+            <div class="columna">
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Relaciones con Inversionistas</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Prueba de velocidad</a>
+
+            </div>
+            <div class="columna">
+                <a href="#">Centro de ayuda</a>
+                <a href="#">Empleo</a>
+                <a href="#">Preferencias de cookies</a>
+                <a href="#">Avisos legales</a>
+            </div>
+            <div class="columna">
+                <a href="#">Cuenta</a>
+                <a href="#">Formas de ver</a>
+                <a href="#">Informacion corporativa</a>
+                <a href="#">Solo en Netflix</a>
+            </div>
+            <div class="columna">
+                <a href="#">Prensa</a>
+                <a href="#">Terminos de Uso</a>
+                <a href="#">Contactanos</a>
+            </div>
+        </div>
+        <p>© 2024 Practica Codo a Codo</p>
+
+    </footer>
+    
+    <script src="./js/scripts.js"></script> 
+   
+</body>
+
+</html>
